@@ -41,7 +41,7 @@ Config.MotorcycleSpawn = 'akuma'
 Config.MedkitName = 'medkit'
 Config.FixKitName = 'fixkit'
 
-Config.Webhook = "https://discord.com/api/webhooks/1068431709386842162/9pFBd7Ag7eraAJyiiVZ4T0UI4e7G82sqe_nK3u3qKbzZLreiKJYCH32Ud6HAkSew2JmS"
+Config.Webhook = ""
 Config.Avatar = ""
 
 Config.AllowedGroups = {
