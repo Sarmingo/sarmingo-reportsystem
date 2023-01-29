@@ -3,7 +3,7 @@ lib.locale()
 
 
 
-RegisterCommand('pogledajrep', function()
+RegisterCommand(Config.CommandToOpenList, function()
     ESX.TriggerServerCallback('provjera', function(grupa) 
             if Config.AllowedGroups[grupa] then 
             TriggerEvent('povuci')
