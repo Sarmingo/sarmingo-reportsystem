@@ -48,3 +48,6 @@ Config.AllowedGroups = {
 	["rpadmin"] = true,
 	["admin"] = true,
 }
+
+
+Config.CommandToOpenList = 'showreplist'
