@@ -117,7 +117,7 @@ RegisterServerEvent('odgovori', function(id, kastm)
     local igrac = ESX.GetPlayerFromId(id)
     local grupa = xPlayer.getGroup()
     if Config.AllowedGroups[grupa] then 
-    exports.ox_inventory:AddItem(id, item, 1)
+    igrac.addInventoryItem(item, 1)
     TriggerClientEvent('chat:addMessage', igrac.source, {
         args = {_U('senditem'), _U('hassended', GetPlayerName(xPlayer.source), item)}
       })
