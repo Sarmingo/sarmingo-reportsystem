@@ -20,6 +20,5 @@ client_scripts{
 }
 
 dependencies {
-    'ox_inventory',
     'ox_lib'
 }
