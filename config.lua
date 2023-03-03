@@ -44,6 +44,8 @@ Config.FixKitName = 'fixkit'
 Config.Webhook = ""
 Config.Avatar = ""
 
+Config.ReportCommand = "report"
+
 Config.AllowedGroups = {
 	["rpadmin"] = true,
 	["admin"] = true,
