@@ -1,5 +1,6 @@
 Locales['en'] = {
     ['answer'] = 'ANSWER',
+    ['noreports'] = 'No reports',
     ['senditems'] = 'SEND ITEMS',
     ['senditem'] = 'SEND ITEM',
     ['replied'] = 'ADMIN [ %s ] responded to your report [ANSWER] %s',
