@@ -131,7 +131,7 @@ local vreme = 0
 local check = {}
 local wait = 60
 
-RegisterCommand("pomoc", function(source, args, rawCommand)
+RegisterCommand(Config.ReportCommand, function(source, args, rawCommand)
   if (not check[source] or check[source] <= os.time() - wait) then
     check[source] = os.time()
     TriggerClientEvent('chat:addMessage', source, {
