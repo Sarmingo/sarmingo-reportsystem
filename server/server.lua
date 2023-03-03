@@ -68,7 +68,7 @@ RegisterServerEvent('revive', function(id)
   local grupa = xPlayer.getGroup()
   if Config.AllowedGroups[grupa] then 
   TriggerClientEvent('esx_ambulancejob:revive', id)
-  reportlogs(_('revivetitle'), _U('revivelog', GetPlayerName(source), GetPlayerName(id)))
+  reportlogs(_U('revivetitle'), _U('revivelog', GetPlayerName(source), GetPlayerName(id)))
 else 
   DropPlayer(source, 'Protection')
   end
@@ -80,7 +80,7 @@ RegisterServerEvent('heal', function(id)
   local grupa = xPlayer.getGroup()
   if Config.AllowedGroups[grupa] then 
   igrac.triggerEvent('esx_basicneeds:healPlayer')
-  reportlogs(_('heal'), _U('heallog', GetPlayerName(source), GetPlayerName(igrac.source)))
+  reportlogs(_U('heal'), _U('heallog', GetPlayerName(source), GetPlayerName(igrac.source)))
 else 
   DropPlayer(source, 'Protection')
   end
@@ -93,7 +93,7 @@ RegisterServerEvent('bring', function(id)
   local grupa = admin.getGroup()
   if Config.AllowedGroups[grupa] then 
   igrac.setCoords(admincoords)
-  reportlogs(_('teleport'), _U('teleportlog', GetPlayerName(source), GetPlayerName(igrac.source)))
+  reportlogs(_U('teleport'), _U('teleportlog', GetPlayerName(source), GetPlayerName(igrac.source)))
 else 
   DropPlayer(source, 'Protection')
   end
