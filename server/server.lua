@@ -162,12 +162,17 @@ RegisterCommand(Config.ReportCommand, function(source, args, rawCommand)
 end, false)
 
 ESX.RegisterServerCallback("reportovi", function(source, cb)
+	local xPlayer = ESX.GetPlayerFromId(source)
 	local reportovi = {}
 	MySQL.Async.fetchAll("SELECT ime, ajdi, razlog FROM reportovi", function(result)
+	if result[1] == nil then
+      xPlayer.showNotification(_U('noreports'))
+    else
 		for i=1, #result, 1 do
 			table.insert(reportovi, {ime = result[i].ime, ajdi = result[i].ajdi, razlog = result[i].razlog})
 		end
 		cb(reportovi)
+		end
 	end)
 end)
 
