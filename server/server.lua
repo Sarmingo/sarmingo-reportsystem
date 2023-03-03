@@ -167,9 +167,6 @@ ESX.RegisterServerCallback("reportovi", function(source, cb)
 		for i=1, #result, 1 do
 			table.insert(reportovi, {ime = result[i].ime, ajdi = result[i].ajdi, razlog = result[i].razlog})
 		end
-		if reportovi == nil then 
-		xPlayer.showNotification('Report is nil')
-		end
 		cb(reportovi)
 	end)
 end)
