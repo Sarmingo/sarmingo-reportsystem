@@ -2,6 +2,8 @@ Config = {}
 
 Config.Locale = 'en'
 
+Config.UsingLegacy = true
+
 Config.Icons = {
     ["deletereport"] = {
     icon = 'fas fa-trash-alt'
