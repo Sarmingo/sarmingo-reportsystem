@@ -1,4 +1,9 @@
+if Config.UsingLegacy then
 ESX = exports['es_extended']:getSharedObject()
+	else
+ESX = nil
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)	
+end
 
 ESX.RegisterServerCallback("provjera", function(source, cb)
   local player = ESX.GetPlayerFromId(source)
