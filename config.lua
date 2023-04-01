@@ -53,5 +53,6 @@ Config.AllowedGroups = {
 	["admin"] = true,
 }
 
+Config.WaitForWriteNewReport = 60
 
 Config.CommandToOpenList = 'showreplist'
