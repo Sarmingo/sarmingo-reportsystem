@@ -192,3 +192,13 @@ function reportlogs(name, message)
     }
   PerformHttpRequest(Config.Webhook, function(err, text, headers) end, 'POST', json.encode({username = 'Report logs', embeds = poruka, avatar_url = Config.Avatar}), { ['Content-Type'] = 'application/json' })
 end
+
+AddEventHandler('onResourceStart', function(res)
+  if (GetCurrentResourceName() ~= res) then
+    MySQL.ready(function()
+MySQL.Async.execute("DELETE FROM reportovi",function()
+end)
+end)
+  end
+end)
+
