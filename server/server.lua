@@ -134,7 +134,7 @@ RegisterServerEvent('odgovori', function(id, kastm)
 
 local vreme = 0
 local check = {}
-local wait = 60
+local wait = Config.WaitForWriteNewReport
 
 RegisterCommand(Config.ReportCommand, function(source, args, rawCommand)
   if (not check[source] or check[source] <= os.time() - wait) then
