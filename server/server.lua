@@ -1,6 +1,4 @@
-if Config.UsingLegacy then
-    ESX = exports['es_extended']:getSharedObject()
-else
+if not Config.UsingLegacy then
     ESX = nil
     TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 end
