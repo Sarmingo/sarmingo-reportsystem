@@ -6,6 +6,7 @@ author 'Sarmingooo#0850'
 shared_script {
     '@es_extended/locale.lua',
     '@mysql-async/lib/MySQL.lua',
+    '@es_extended/imports.lua',
     'locales/*.lua',
     '@ox_lib/init.lua',
     'config.lua'
