@@ -6,7 +6,7 @@ Config.UsingLegacy = true
 
 Config.Icons = {
     ["deletereport"] = {
-    icon = 'fas fa-trash-alt'
+        icon = 'fas fa-trash-alt'
     },
     ["tptoperson"] = {
         icon = 'fas fa-user'
@@ -49,8 +49,8 @@ Config.Avatar = ""
 Config.ReportCommand = "report"
 
 Config.AllowedGroups = {
-	["rpadmin"] = true,
-	["admin"] = true,
+    ["rpadmin"] = true,
+    ["admin"] = true,
 }
 
 Config.WaitForWriteNewReport = 60
