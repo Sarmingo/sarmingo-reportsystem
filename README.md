@@ -1,3 +1,3 @@
 # sarmingo-reportsystem
-DISCORD FOR SUPPORT : https://discord.gg/eG9xqA3yY2
-Report system for ox_lib![image](https://user-images.githubusercontent.com/78432708/215137155-989d1b5f-c7fc-42cc-8b49-3582d29c876e.png)
+Report system for ox_lib
+![reportsystem](https://github.com/Sarmingo/sarmingo-reportsystem/assets/78432708/cf8af8c6-cc0d-450f-8992-d85c5ab9b554)
